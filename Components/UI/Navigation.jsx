@@ -10,11 +10,18 @@ import Stack from "@mui/material/Stack";
 
 import Logo from ".././../public/Logo.svg";
 import ReadingProgressBar from "./ReadingProgressBar";
+import { useDispatch } from "react-redux";
 
 const Navigation = () => {
   const [homePageActive, setHomePageActive] = useState(false);
   const [carsPageActive, setCarsPageActive] = useState(false);
   const pathName = usePathname();
+  const dispatch = useDispatch();
+
+  const onLogoClickHandler = () => {
+    // dispatch(resetTextToImageSlice(null));
+  };
+
   useEffect(() => {
     if (pathName === "/") {
       setHomePageActive(true);
@@ -42,13 +49,13 @@ const Navigation = () => {
                 <Grid container>
                   <Grid item xs={6} sm={6} md={10} lg={10}>
                     <Box sx={{ display: { xs: "none", lg: "block", md: "block" }, marginLeft: "-12px" }}>
-                      <Link href="/">
+                      <Link href="/" onClick={onLogoClickHandler}>
                         <Image alt="Logo" src={Logo} width={180} height={42} />
                       </Link>
                     </Box>
                     {/* For Mobile Phones */}
                     <Box sx={{ display: { xs: "block", md: "none", lg: "none" } }}>
-                      <Link href="/">
+                      <Link href="/" onClick={onLogoClickHandler}>
                         <Image alt="Logo" src={Logo} width={152} height={35} />
                       </Link>
                     </Box>
