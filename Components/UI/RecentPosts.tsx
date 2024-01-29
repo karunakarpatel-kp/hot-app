@@ -46,10 +46,10 @@ const RecentPosts = () => {
 
   useEffect(() => {
     // Filtered the blogPosts with the sameURL and filtered out to only latest 3 objects in blogPostArray
-    const BlogPostsWithoutPresentURL = incomingBlogPosts
-      .filter((pathName) => pathName.url !== presentURL && isWithinLastMonth(pathName.publishedTime))
-      .slice(0, 3);
-    setFilteredPosts(BlogPostsWithoutPresentURL);
+    // const BlogPostsWithoutPresentURL = incomingBlogPosts
+    //   .filter((pathName) => pathName.url !== presentURL && isWithinLastMonth(pathName.publishedTime))
+    //   .slice(0, 3);
+    // setFilteredPosts(BlogPostsWithoutPresentURL);
   }, []);
 
   return (

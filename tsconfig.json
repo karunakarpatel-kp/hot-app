@@ -22,6 +22,7 @@
       "@Layout/*": ["Components/Layout/*"],
       "@Sandbox/*": ["Components/Sandbox/*"],
       "@SEO/*": ["Components/SEO/*"],
+      "@AI/*": ["Components/AI/*"],
       "@SyntaxHighlighter/*": ["Components/SyntaxHighlighter/*"],
       "@Theme/*": ["Components/Theme/*"],
       "@UI/*": ["Components/UI/*"],

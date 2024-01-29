@@ -9,6 +9,9 @@ import nProgress from "nprogress";
 import "../styles/globals.css";
 import "../public/fonts/font.css";
 import "../styles/nProgress.css";
+import { SnackbarProvider } from "notistack";
+import { Provider } from "react-redux";
+import store from "store/centralStore";
 
 // Layout of the Nextjs Page with TypeScript...!
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
@@ -25,7 +28,13 @@ Router.events.on("routeChangeComplete", nProgress.done);
 
 const _app = ({ Component, pageProps }: AppPropsWithLayout) => {
   const getLayout = Component.getLayout || ((page) => page);
-  return <>{getLayout(<Component {...pageProps} />)}</>;
+  return (
+    <>
+      <SnackbarProvider maxSnack={1} preventDuplicate autoHideDuration={4000}>
+        <Provider store={store}>{getLayout(<Component {...pageProps} />)}</Provider>
+      </SnackbarProvider>
+    </>
+  );
 };
 
 export default _app;

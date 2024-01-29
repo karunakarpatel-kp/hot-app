@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 <Grid container>
                   <Grid item xs={12} sm={3} md={3} lg={3} border={0}>
                     <Box sx={{ display: { xs: "block", lg: "block", md: "block" }, ml: 0, mt: { xs: 1 } }}>
-                      <Typography variant="subtitle2" color="#ffffff">
+                      <Typography color="#ffffff" fontSize="medium">
                         @Karunakar Patel. All Rights Reserved
                       </Typography>
                     </Box>
