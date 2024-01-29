@@ -24,7 +24,7 @@ const ExtendFullPageLayout = (props: FullpageBlogPostLayoutProps) => {
           {/* Extra Space On The Left Side */}
         </Grid>
 
-        <Grid item xs={12} sm={11} md={10} lg={9} minHeight="100vh">
+        <Grid item xs={12} sm={11} md={10} lg={9} minHeight="100vh" border={0} p={2}>
           {/* Center Content */}
           {props.children}
 
