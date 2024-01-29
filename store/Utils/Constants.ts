@@ -13,7 +13,6 @@ export const TextToImageServiceList: TextToImageServiceListProps[] = [
     url: process.env.OPEN_JOURNEY_URL!,
   },
   {
-    // url: process.env.STABLE_DIFFUSION_2_1!,
     name: "IP Adapter FaceID",
     url: process.env.IP_ADAPTER_FACE_ID_URL!,
   },
