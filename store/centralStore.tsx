@@ -9,10 +9,10 @@ import TextToImageSlice from "./ai/TextToImageSlice/TextToImageSlice";
 const store = configureStore({
   reducer: {
     utilitySlice: utilitySlice,
-    YTAPISlice: YTAPISlice,
-    imgReducerSlice: imgReducerSlice,
-    AIUtilitySlice: AIUtilitySlice,
-    TextToSpeechSlice: TextToSpeechSlice,
+    // YTAPISlice: YTAPISlice,
+    // imgReducerSlice: imgReducerSlice,
+    // AIUtilitySlice: AIUtilitySlice,
+    // TextToSpeechSlice: TextToSpeechSlice,
     TextToImageSlice: TextToImageSlice,
   },
 });
