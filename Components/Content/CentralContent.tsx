@@ -2,8 +2,9 @@ import React from "react";
 
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
 import Paragraph from "@Components/Elements/Paragraph/Paragraph";
-import { Grid, List, ListItem, ListItemText } from "@mui/material";
+import { Box, Grid, List, ListItem, ListItemText } from "@mui/material";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
+import Sharing from "@Components/SocialShare/Sharing";
 
 const CentralContent = () => {
   return (
@@ -155,6 +156,9 @@ const CentralContent = () => {
               </ListItemText>
             </ListItem>
           </List>
+          <Box mt={1} mb={3}>
+            <Sharing />
+          </Box>
         </Grid>
 
         <Grid item xs={0} sm={0.5} md={1} lg={1.5} border={0}>

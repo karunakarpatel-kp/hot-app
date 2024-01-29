@@ -90,7 +90,6 @@ const Home: NextPageWithLayout = () => {
             </Box>
           </Box>
         </Grid>
-
         <Grid
           container
           border={0}
