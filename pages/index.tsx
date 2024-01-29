@@ -157,9 +157,13 @@ const Home: NextPageWithLayout = () => {
         {/* <HorizontalResponsive /> */}
         {
           <Box sx={{ border: 1, display: "block" }}>
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3881336361965788"
+            ></script>
             <ins
               className="adsbygoogle"
-              // style="display:block"
+              style={{ display: "block" }}
               data-ad-client="ca-pub-3881336361965788"
               data-ad-slot="4292422002"
               data-ad-format="auto"
