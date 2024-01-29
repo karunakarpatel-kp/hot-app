@@ -16,6 +16,7 @@ import {
 } from "next-share";
 import { Stack } from "@mui/material";
 import { useRouter } from "next/router";
+import { BASE_URLS } from "Essentials";
 
 const Sharing = () => {
   const router = useRouter();
@@ -26,7 +27,7 @@ const Sharing = () => {
     const grabTitleID = document.getElementById("title");
     const grabTitle = grabTitleID!.innerText;
     setGrabbedTitle(grabTitle);
-    setGrabbedURL("https://www.vehiclemasti.com" + router.route);
+    setGrabbedURL(`${BASE_URLS.HOME_PAGE_BASE_URL}` + router.route);
   }, []);
 
   return (
