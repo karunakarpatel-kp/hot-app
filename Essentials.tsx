@@ -115,18 +115,18 @@ export const SEO_OBJ: SEOObjProps = {
   HOME_PAGE: {
     absoluteURL: blogPostURLS.HOME_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
-    title: "Text To Image Generator With Unlimited Aceess",
+    title: "Text To Image Converter ai tool 2024",
     description:
-      "Welcome to Blogginglover Blog! This is the perfect place for people who love automobiles whether you are a car enthusiast or a casual driver. You'll find easy-to-understand articles, maintenance tips, and reviews about different automobile manufacturers. Join our community and let's learn and grow together in the world of automobiles!",
+      "Our Text to Image AI Converter utilizes advanced artificial intelligence algorithms to convert plain text into visually appealing images. Whether you're creating social media graphics, presentations, or artistic designs, our platform simplifies the conversion process, offering a seamless user experience.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-10-20T19:07:55+00:00",
+    publishedTime: "2024-01-29T17:07:55+00:00",
     featuredImage: vehicleMasti,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     tags: [
-      { tag: "Next.js Install", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-      { tag: "Next.js", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
-      { tag: "Blog", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "ai-text-image-generator", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "text-to-image-ai-tool", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
+      { tag: "text-to-image-converter", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
       { tag: "Karunakar Patel", href: `${blogPostURLS.HOME_PAGE_RELATIVE}` },
     ],
   },
@@ -138,7 +138,7 @@ export const SEO_OBJ: SEOObjProps = {
     description:
       "Welcome to blogginglover privacy policy. In here you can find all the details about privacy policy of Blogginglover",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-01-29T17:07:55+00:00",
     featuredImage: vehicleMasti,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -151,7 +151,7 @@ export const SEO_OBJ: SEOObjProps = {
     description:
       "Welcome to blogginglover contact page. In here you can find all the details of about Blogginglover contact information and a way to contact administrator of the VehicleMasti site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-01-29T17:07:55+00:00",
     featuredImage: vehicleMasti,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
@@ -164,7 +164,7 @@ export const SEO_OBJ: SEOObjProps = {
     description:
       "Welcome to blogginglover disclaimer page. In here you can find all the details of about Blogginglover Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
-    publishedTime: "2023-12-09T19:07:55+00:00",
+    publishedTime: "2024-01-29T17:07:55+00:00",
     featuredImage: vehicleMasti,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,

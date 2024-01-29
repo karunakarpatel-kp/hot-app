@@ -54,14 +54,14 @@ const DisclaimerPage: NextPageWithLayout = () => {
       >
         <Grid item md={8} lg={8}>
           <Paragraph>
-            The information provided on VehicleMasti.com is for general informational purposes only. While we strive to
+            The information provided on Blogginglover.in is for general informational purposes only. While we strive to
             provide accurate and up-to-date information, we make no representations or warranties of any kind, express
             or implied, about the completeness, accuracy, reliability, suitability, or availability of the information
             contained on our website or related graphics.
           </Paragraph>
           <HeadingTwo id="accuracy-of-information" title="Accuracy of Information" />
           <Paragraph>
-            The content on VehicleMasti.com is based on the authors research, opinions, and personal experiences. It may
+            The content on Blogginglover.in is based on the authors research, opinions, and personal experiences. It may
             not always reflect the most current news or developments. We do our best to ensure the accuracy of the
             information provided, but we cannot guarantee that all information is entirely accurate, complete, or
             current. Any reliance you place on the information provided on our website is strictly at your own risk.
@@ -69,14 +69,14 @@ const DisclaimerPage: NextPageWithLayout = () => {
 
           <HeadingTwo id="editorial-control" title="Editorial Control" />
           <Paragraph>
-            <B>VehicleMasti.com</B> is a news blog where our team of writers and editors curate and publish articles on
+            <B>Blogginglover.in</B> is a news blog where our team of writers and editors curate and publish articles on
             various topics. The opinions expressed in the articles belong to the respective authors and do not
-            necessarily reflect the views of VehicleMasti.com. We strive to maintain editorial integrity and provide a
+            necessarily reflect the views of Blogginglover.in. We strive to maintain editorial integrity and provide a
             platform for diverse perspectives.
           </Paragraph>
           <HeadingTwo id="external-links" title="External Links" />
           <Paragraph>
-            <B> VehicleMasti.com</B> may contain links to external websites or resources. These links are provided for
+            <B>Blogginglover.in</B> may contain links to external websites or resources. These links are provided for
             convenience and informational purposes. We have no control over the content, nature, or availability of
             those external sites. The inclusion of any links does not necessarily imply a recommendation or endorsement
             of the views expressed within them.
@@ -84,26 +84,26 @@ const DisclaimerPage: NextPageWithLayout = () => {
 
           <HeadingTwo id="advertisement" title="Advertisement and Sponsored Content" />
           <Paragraph>
-            <B>VehicleMasti.com</B> may display advertisements or sponsored content. The presence of such content does
-            not constitute an endorsement or recommendation by VehicleMasti.com. We are not responsible for the
-            accuracy, legality, or content of any external advertisements or sponsored materials.
+            <B>Blogginglover.in</B> may display advertisements or sponsored content. The presence of such content does
+            not constitute an endorsement or recommendation Blogginglover.in. We are not responsible for the accuracy,
+            legality, or content of any external advertisements or sponsored materials.
           </Paragraph>
           <HeadingTwo id="advice" title="Always Seek Professional Advice" />
           <Paragraph>
-            The information provided on <B>VehicleMasti.com</B> is not intended to be a substitute for professional
+            The information provided on <B>Blogginglover.in</B> is not intended to be a substitute for professional
             advice. It is essential to seek the advice of qualified professionals regarding any specific issue or
             concern. Reliance on any information provided on this website is solely at your own risk.
           </Paragraph>
           <HeadingTwo id="limitation" title="Limitation of Liability" />
           <Paragraph>
-            In no event shall <B>VehicleMasti.com</B> or its owners, employees, or affiliates be liable for any direct,
+            In no event shall <B>Blogginglover.in</B> or its owners, employees, or affiliates be liable for any direct,
             indirect, incidental, consequential, or special damages arising out of or in connection with the use of our
             website, the information provided, or the inability to use the website.
           </Paragraph>
           <HeadingTwo id="disclaimer" title="Changes to the Disclaimer" />
           <Paragraph>
             We reserve the right to modify or update this Disclaimer at any time without prior notice. By using
-            VehicleMasti.com, you agree to be bound by the current version of the Disclaimer.
+            blogginglover.in, you agree to be bound by the current version of the Disclaimer.
           </Paragraph>
           <HeadingTwo id="contact" title="Contact Us" />
           <Paragraph>

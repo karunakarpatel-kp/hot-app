@@ -17,11 +17,11 @@ const Custom404: NextPageWithLayout = () => {
   return (
     <>
       <HeaderSection
-        title="Page Not Found | VehicleMasti Blog"
-        description="This is an custom 404 page for VehicleMasti Blog"
-        publishedTime="2023-12-12T12:07:31+05:30"
-        lastUpdatedTime="2023-12-12T12:07:31+05:30"
-        url="https://www.vehiclemasti.com/404"
+        title="Page Not Found | BloggingLove"
+        description="This is an custom 404 page for BloggingLove Blog"
+        publishedTime="2024-01-29T17:07:31+05:30"
+        lastUpdatedTime="2024-01-29T17:07:31+05:30"
+        url="https://www.blogginglover.in/404"
         image={NotFoundSvgImage}
       />
       <Grid container minHeight="80vh">
@@ -57,10 +57,10 @@ const Custom404: NextPageWithLayout = () => {
             <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
               <ListItem sx={{ display: "list-item" }}>
                 <ListItemText>
-                  <Link href="/">HomePage</Link>
+                  <Link href="/">Text To Image Converter</Link>
                 </ListItemText>
               </ListItem>
-              <ListItem sx={{ display: "list-item" }}>
+              {/* <ListItem sx={{ display: "list-item" }}>
                 <ListItemText>
                   <Link href="/cars">Cars Page</Link>
                 </ListItemText>
@@ -69,7 +69,7 @@ const Custom404: NextPageWithLayout = () => {
                 <ListItemText>
                   <Link href="/cars/tata">Tata Automobiles Page</Link>
                 </ListItemText>
-              </ListItem>
+              </ListItem> */}
             </List>
             <Box mb={3} sx={{ display: { xs: "none", sm: "none", md: "block", lg: "block" } }}>
               <Sharing />

@@ -5,6 +5,7 @@ import {
   Box,
   Button,
   CircularProgress,
+  Divider,
   Grid,
   Paper,
   Stack,
@@ -31,6 +32,7 @@ import { callTextToImageService } from "store/ai/TextToImageSlice/TextToImageSli
 import TextToImageConverter from "@Components/AI/TextToImage/TextToImageConverter";
 import WelcomeScreen from "@Components/UI/WelcomeScrn/WelcomeScreen";
 import HorizontalResponsive from "@Components/Ads/GoogleAdsense/HorizontalResponsive";
+import CentralContent from "@Components/Content/CentralContent";
 
 const Home: NextPageWithLayout = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -70,8 +72,7 @@ const Home: NextPageWithLayout = () => {
               sx={{ mb: { xs: 2, sm: 2, md: 3, lg: 3, color: "white" } }}
               id="title"
             >
-              {/* {SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.title} */}
-              Text To Image Generator
+              {SEO_OBJ.HOME_PAGE.title}
             </Typography>
             <Box
               margin="auto"
@@ -80,8 +81,7 @@ const Home: NextPageWithLayout = () => {
               sx={{ width: { xs: 5 / 5, sm: 5 / 5, md: 3 / 5, lg: 3 / 5 } }}
             >
               <Typography variant="blogPostBrandSubheading" mb={6} mt={5}>
-                Descripton in here
-                {/* {SEO_OBJ.YOUTUBE_VIDEO_TO_MP3_PAGE.description} */}
+                {SEO_OBJ.HOME_PAGE.description}
               </Typography>
               <LastUpdateTags
                 lastUpdatedTime={DateMonthYearForBlogPost(SEO_OBJ.HOME_PAGE.lastUpdateTime)}
@@ -156,8 +156,8 @@ const Home: NextPageWithLayout = () => {
         </Grid>
         {/* <HorizontalResponsive /> */}
         {
-          <Box sx={{ border: 1, display: "block" }}>
-            <script
+          <Box sx={{ border: 0, display: "block" }}>
+            {/* <script
               async
               src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3881336361965788"
             ></script>
@@ -169,9 +169,11 @@ const Home: NextPageWithLayout = () => {
               data-ad-format="auto"
               data-full-width-responsive="true"
             ></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
           </Box>
         }
+        <Divider variant="fullWidth" sx={{ width: "90%", margin: "auto" }} />
+        <CentralContent />
         <Footer />
         <ModalContainer />
       </ThemeProvider>
