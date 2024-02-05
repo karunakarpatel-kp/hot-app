@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import { StaticImageData } from "next/image";
+import { useRouter } from "next/router";
 
 interface HeaderSectionProps {
   title: string;
@@ -12,7 +13,15 @@ interface HeaderSectionProps {
 }
 
 const HeaderSection = (props: HeaderSectionProps) => {
+  const router = useRouter();
   const { title, description, image, url, publishedTime, lastUpdatedTime } = props;
+
+  // const [pageURL, setPageURL] = useState(process.env.HOME_PAGE_BASE_URL + router.route);
+
+  // useEffect(() => {
+  //   setPageURL(process.env.HOME_PAGE_BASE_URL + router.route);
+  // }, [router.route, pageURL]);
+
   return (
     <>
       <Head>
@@ -37,7 +46,7 @@ const HeaderSection = (props: HeaderSectionProps) => {
         <meta property="og:url" content={url} />
         <meta property="article:published_time" content={publishedTime} />
         <meta property="article:modified_time" content={lastUpdatedTime} />
-        <link rel="canonical" href="https://blogginglover.in/" />
+        <link rel="canonical" href={process.env.HOME_PAGE_BASE_URL + router.route} />
       </Head>
     </>
   );

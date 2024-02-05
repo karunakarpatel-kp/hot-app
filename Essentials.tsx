@@ -1,4 +1,4 @@
-import vehicleMasti from "@Public/welcome-vehiclemasti.png";
+import textToImageWelcomeImage from "@Public/welcome-page.png";
 
 export const DateMonthYearForBlogPost = (lastUpdateTime: string) => {
   const months = [
@@ -120,7 +120,7 @@ export const SEO_OBJ: SEOObjProps = {
       "Our Text to Image AI Converter utilizes advanced artificial intelligence algorithms to convert plain text into visually appealing images. Whether you're creating social media graphics, presentations, or artistic designs, our platform simplifies the conversion process, offering a seamless user experience.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2024-01-29T17:07:55+00:00",
-    featuredImage: vehicleMasti,
+    featuredImage: textToImageWelcomeImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
     tags: [
@@ -139,7 +139,7 @@ export const SEO_OBJ: SEOObjProps = {
       "Welcome to blogginglover privacy policy. In here you can find all the details about privacy policy of Blogginglover",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2024-01-29T17:07:55+00:00",
-    featuredImage: vehicleMasti,
+    featuredImage: textToImageWelcomeImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
@@ -149,10 +149,10 @@ export const SEO_OBJ: SEOObjProps = {
     relativeURL: blogPostURLS.CONTACT_PAGE_RELATIVE,
     title: "Contact Us | BloggingLover",
     description:
-      "Welcome to blogginglover contact page. In here you can find all the details of about Blogginglover contact information and a way to contact administrator of the VehicleMasti site.",
+      "Welcome to blogginglover contact page. In here you can find all the details of about Blogginglover contact information and a way to contact administrator of the blogginglover site.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2024-01-29T17:07:55+00:00",
-    featuredImage: vehicleMasti,
+    featuredImage: textToImageWelcomeImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
@@ -165,7 +165,7 @@ export const SEO_OBJ: SEOObjProps = {
       "Welcome to blogginglover disclaimer page. In here you can find all the details of about Blogginglover Disclaimer and its policies.",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2024-01-29T17:07:55+00:00",
-    featuredImage: vehicleMasti,
+    featuredImage: textToImageWelcomeImage,
     featuredImageAltText: "a-person-with-computer",
     ogImageURL: `${BASE_URLS.HOME_PAGE_BASE_URL}/welcome-page.png`,
   },
