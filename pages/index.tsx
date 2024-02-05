@@ -127,6 +127,7 @@ const Home: NextPageWithLayout = () => {
             justifyContent="center"
             alignItems="center"
             position={"relative"}
+            minHeight={300}
           >
             {(text2ImageData === null && text2ImageLoadingStatus === null) || text2ImageLoadingStatus === "" ? (
               <WelcomeScreen AlertMSG="Welcome Message of Text To Image Generator" />
