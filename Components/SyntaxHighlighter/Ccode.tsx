@@ -4,7 +4,7 @@ interface CcodeProps {
   children?: JSX.Element | JSX.Element[] | string | string[];
 }
 
-const Ccode = (props: CcodeProps) => {
+export const Ccode = (props: CcodeProps) => {
   return (
     <>
       <code className="customCode">{props.children}</code>
@@ -12,4 +12,4 @@ const Ccode = (props: CcodeProps) => {
   );
 };
 
-export default Ccode;
+// export default Ccode;
