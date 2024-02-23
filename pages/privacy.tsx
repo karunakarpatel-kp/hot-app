@@ -8,7 +8,7 @@ import { Box, Grid, Divider, List, ListItem, ListItemText } from "@mui/material"
 import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
 import HeaderImageFullBlogPost from "@Components/UI/ImageCards/HeaderImageFullBlogPost";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
@@ -52,154 +52,152 @@ const PrivacyPage: NextPageWithLayout = () => {
         sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}
       >
         <Grid item md={8} lg={8}>
-          <Paragraph>
+          <P>
             This Privacy Policy outlines how <B>Blogginglover.in</B> collects, uses, and protects the personal
             information you provide while using our website. We are committed to ensuring the privacy and security of
             your personal information. By using Blogginglover.in, you agree to the terms and practices described in this
             policy.
-          </Paragraph>
+          </P>
           <HeadingTwo id="heading" title="Information We Collect" />
-          <Paragraph>
+          <P>
             When you visit Blogginglover.in, we may collect certain personally identifiable information, including but
             not limited to:
-          </Paragraph>
+          </P>
           <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Name</B>: We may collect your name when you voluntarily provide it, such as when submitting
                   comments or contacting us through our website.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Email Address</B>: We may collect your email address when you subscribe to our newsletter or
                   contact us through our website.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>IP Address</B>: We automatically collect your IP address and related information, such as your
                   approximate location, for analytical and security purposes.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Cookies</B>: We use cookies to enhance your browsing experience and track usage information. You
                   can control and manage cookies through your browser settings.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
           </List>
           <HeadingTwo title="Use of Information" id="information" />
-          <Paragraph>The information we collect is used for the following purposes:</Paragraph>
+          <P>The information we collect is used for the following purposes:</P>
           <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>To provide and personalize our services to you.</Paragraph>
+                <P>To provide and personalize our services to you.</P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>To communicate with you, respond to your inquiries, and provide customer support.</Paragraph>
+                <P>To communicate with you, respond to your inquiries, and provide customer support.</P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   To send you newsletters, updates, and promotional materials if you have subscribed to our mailing
                   list.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>To analyze website usage and improve our content and services.</Paragraph>
+                <P>To analyze website usage and improve our content and services.</P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
-                  To prevent fraud, protect the security of our website, and comply with legal obligations.
-                </Paragraph>
+                <P>To prevent fraud, protect the security of our website, and comply with legal obligations.</P>
               </ListItemText>
             </ListItem>
           </List>
           <HeadingThree id="three" title="Data Sharing and Disclosure" />
-          <Paragraph>
+          <P>
             We do not sell, trade, or transfer your personally identifiable information to third parties without your
             consent, except in the following cases:
-          </Paragraph>
+          </P>
           <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Service Providers</B>: We may engage trusted third-party service providers to assist us in
                   operating our website and providing services to you. These providers have access to your personal
                   information only to perform specific tasks on our behalf and are obligated to maintain its
                   confidentiality.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Legal Requirements</B>: We may disclose your personal information if required by law or in response
                   to valid legal processes, such as a court order or government request.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Consent</B>: We may share your information with your consent or as otherwise disclosed at the time
                   of collection.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
           </List>
           <HeadingThree title="Data Retention" id="data" />
-          <Paragraph>
+          <P>
             We retain your personal information for as long as necessary to fulfill the purposes outlined in this
             Privacy Policy, unless a longer retention period is required or permitted by law.
-          </Paragraph>
+          </P>
           <HeadingThree title="Security" id="security" />
-          <Paragraph>
+          <P>
             We take reasonable measures to protect the security of your personal information and prevent unauthorized
             access, disclosure, or alteration. However, please note that no method of transmission over the Internet or
             electronic storage is 100% secure, and we cannot guarantee absolute security.
-          </Paragraph>
+          </P>
           <HeadingThree title="Your Rights" id="rights" />
-          <Paragraph>
+          <P>
             You have the right to access, update, correct, and delete your personal information. You may also
             unsubscribe from our mailing list or opt out of receiving promotional communications at any time. To
             exercise these rights or for any privacy-related inquiries, please contact us using the information provided
             below.
-          </Paragraph>
+          </P>
           <HeadingThree title="Changes to This Privacy Policy" id="privacy-policy" />
-          <Paragraph>
+          <P>
             We reserve the right to update or modify this Privacy Policy at any time. Any changes will be posted on this
             page with a revised “Last Updated” date. We encourage you to review this Privacy Policy periodically to stay
             informed about how we collect, use, and protect your information.
-          </Paragraph>
+          </P>
 
           <HeadingThree title="Contact Us" id="contact" />
-          <Paragraph>
+          <P>
             If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices,
             please get in touch with us at:
-          </Paragraph>
+          </P>
           <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Email</B>: <B>karunakarpatel.business@gmail.com</B>.{" "}
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
           </List>

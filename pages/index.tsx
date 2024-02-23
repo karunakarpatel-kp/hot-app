@@ -18,7 +18,7 @@ import Theme, { themeColors } from "@Theme/Theme";
 import { NextPageWithLayout } from "pages/_app";
 import { DateMonthYearForBlogPost, SEO_OBJ, blogPostsObj } from "Essentials";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import Footer from "@Components/UI/Footer";
 import Navigation from "@Components/UI/Navigation";
 import Sharing from "@Components/SocialShare/Sharing";
@@ -90,88 +90,10 @@ const Home: NextPageWithLayout = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid
-          container
-          border={0}
-          mt={1}
-          // direction={{ xs: "column-reverse", sm: "column-reverse", md: "row", lg: "row" }}
-          direction="row"
-          minHeight="70vh"
-        >
-          {/* Left Content */}
-          <Grid
-            item
-            border={0}
-            xs={12}
-            sm={12}
-            md={6}
-            lg={6}
-            p={2}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-          >
-            <Box width="95%">
-              <TextToImageConverter />
-            </Box>
-          </Grid>
-          {/* RightContent */}
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={6}
-            border={0}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            position={"relative"}
-            minHeight={300}
-          >
-            {(text2ImageData === null && text2ImageLoadingStatus === null) || text2ImageLoadingStatus === "" ? (
-              <WelcomeScreen AlertMSG="Welcome Message of Text To Image Generator" />
-            ) : text2ImageLoadingStatus === "PENDING" ? (
-              <CircularProgress />
-            ) : text2ImageLoadingStatus === "REJECTED" ? (
-              <Alert variant="outlined" severity="info">
-                Experiencing heavy load on our server, please try after some time.
-              </Alert>
-            ) : (
-              <>
-                <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }}>
-                  {text2ImageData !== null && (
-                    <Image src={text2ImageData!} alt={userPromtMsg} width={470} height={350} />
-                  )}
-                </Box>
-                {/*  For Mobiles */}
-                <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
-                  {text2ImageData !== null && (
-                    <Image src={text2ImageData!} alt={userPromtMsg} width={370} height={280} />
-                  )}
-                </Box>
-              </>
-            )}
-          </Grid>
-        </Grid>
+        {/* If there is any tool, below is the Grid Container with left, right containers */}
+
         {/* <HorizontalResponsive /> */}
-        {
-          <Box sx={{ border: 0, display: "block" }}>
-            {/* <script
-              async
-              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3881336361965788"
-            ></script>
-            <ins
-              className="adsbygoogle"
-              style={{ display: "block" }}
-              data-ad-client="ca-pub-3881336361965788"
-              data-ad-slot="4292422002"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
-            ></ins>
-            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> */}
-          </Box>
-        }
+
         <Divider variant="fullWidth" sx={{ width: "90%", margin: "auto" }} />
         <CentralContent />
         <Footer />
@@ -183,3 +105,73 @@ const Home: NextPageWithLayout = () => {
 };
 
 export default Home;
+
+// ? Grid with left & Right Container
+//  <Grid
+//           container
+//           border={0}
+//           mt={1}
+//           // direction={{ xs: "column-reverse", sm: "column-reverse", md: "row", lg: "row" }}
+//           direction="row"
+//           minHeight="70vh"
+//         >
+//           {/* Left Content */}
+//           <Grid
+//             item
+//             border={0}
+//             xs={12}
+//             sm={12}
+//             md={6}
+//             lg={6}
+//             p={2}
+//             display="flex"
+//             justifyContent="center"
+//             alignItems="center"
+//           >
+//             <Box width="95%">
+//               Left Container
+//               {/* <TextToImageConverter /> */}
+//             </Box>
+//           </Grid>
+//           {/* RightContent */}
+//           <Grid
+//             item
+//             xs={12}
+//             sm={12}
+//             md={6}
+//             lg={6}
+//             border={0}
+//             display="flex"
+//             justifyContent="center"
+//             alignItems="center"
+//             position={"relative"}
+//             minHeight={300}
+//           >
+//             Righ Container
+//           </Grid>
+//         </Grid>
+
+//? Righ Container
+//  {(text2ImageData === null && text2ImageLoadingStatus === null) || text2ImageLoadingStatus === "" ? (
+//               <WelcomeScreen AlertMSG="Welcome Message of Text To Image Generator" />
+//             ) : text2ImageLoadingStatus === "PENDING" ? (
+//               <CircularProgress />
+//             ) : text2ImageLoadingStatus === "REJECTED" ? (
+//               <Alert variant="outlined" severity="info">
+//                 Experiencing heavy load on our server, please try after some time.
+//               </Alert>
+//             ) : (
+//               <>
+//                 <Box display={{ xs: "none", sm: "none", md: "block", lg: "block" }}>
+//                   {text2ImageData !== null && (
+//                     <Image src={text2ImageData!} alt={userPromtMsg} width={470} height={350} />
+//                   )}
+//                 </Box>
+//                 {/*  For Mobiles */}
+//                 <Box display={{ xs: "block", sm: "block", md: "none", lg: "none" }}>
+//                   {text2ImageData !== null && (
+//                     <Image src={text2ImageData!} alt={userPromtMsg} width={370} height={280} />
+//                   )}
+//                 </Box>
+//               </>
+//             )}

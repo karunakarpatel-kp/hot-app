@@ -115,9 +115,8 @@ export const SEO_OBJ: SEOObjProps = {
   HOME_PAGE: {
     absoluteURL: blogPostURLS.HOME_PAGE_ABSOLUTE,
     relativeURL: blogPostURLS.HOME_PAGE_RELATIVE,
-    title: "Text To Image Converter ai tool 2024",
-    description:
-      "Our Text to Image AI Converter utilizes advanced artificial intelligence algorithms to convert plain text into visually appealing images. Whether you're creating social media graphics, presentations, or artistic designs, our platform simplifies the conversion process, offering a seamless user experience.",
+    title: "Single Page Application",
+    description: "Description for single page application with only one single image",
     lastUpdateTime: `${dynamicLastUpdatedTime()}`,
     publishedTime: "2024-01-29T17:07:55+00:00",
     featuredImage: textToImageWelcomeImage,

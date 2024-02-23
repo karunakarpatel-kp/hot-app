@@ -6,7 +6,7 @@ import FullPageBlogPostLayout from "@Components/Layout/FullPageBlogPostLayout";
 import Image from "next/image";
 import NotFoundSvgImage from "@Public/404.svg";
 import HeadingOne from "@Components/Elements/Headings/HeadingOne";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import HeadingThree from "@Components/Elements/Headings/HeadingThree";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
 import Link from "next/link";
@@ -52,7 +52,7 @@ const Custom404: NextPageWithLayout = () => {
         >
           <Box>
             <HeadingOne id="title" title="Page Not Found" />
-            <Paragraph>The page you were looking for doesnot exist.</Paragraph>
+            <P>The page you were looking for doesnot exist.</P>
             <HeadingThree id="two" title="Here are some helpful links instead:" />
             <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
               <ListItem sx={{ display: "list-item" }}>

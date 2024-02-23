@@ -10,7 +10,7 @@ interface ParagraphProps {
   children?: string | JSX.Element | JSX.Element[] | string[] | (string | JSX.Element)[];
 }
 
-const Paragraph = (props: ParagraphProps) => {
+export const Paragraph = (props: ParagraphProps) => {
   const { id, text, variant, children } = props;
   return (
     <>
@@ -21,4 +21,4 @@ const Paragraph = (props: ParagraphProps) => {
   );
 };
 
-export default Paragraph;
+// export default Paragraph;

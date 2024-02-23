@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import { blogPostsObj } from "Essentials";
 import ImageOnTopCard from "./HomePageCards/ImageOnTopCard";
 import { useRouter } from "next/router";

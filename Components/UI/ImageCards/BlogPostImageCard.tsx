@@ -1,9 +1,9 @@
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
 import { Box, Grid } from "@mui/material";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
 import grillImage from "@TataImages/cocooned-safety-safari-2023.jpg";
 import Typography from "@mui/material/Typography/Typography";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 
 interface BlogPostImageCardProps {
   paragraphText: string;

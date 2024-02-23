@@ -3,7 +3,7 @@ import Tabs, { tabsClasses } from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -24,7 +24,7 @@ function CustomTabPanel(props: TabPanelProps) {
     >
       {value === index && (
         <Box sx={{ p: 1.2, minHeight: "100px" }}>
-          <Paragraph text={children} />
+          <P text={children} />
         </Box>
       )}
     </div>

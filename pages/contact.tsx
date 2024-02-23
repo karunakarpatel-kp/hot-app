@@ -9,7 +9,7 @@ import HeadingOne from "@Components/Elements/Headings/HeadingOne";
 import Subtitle from "@Components/Elements/Subtitle/Subtitle";
 import LastUpdateTags from "@Components/UI/LastUpdate&Tags/LastUpdateTags";
 import HeaderImageFullBlogPost from "@Components/UI/ImageCards/HeaderImageFullBlogPost";
-import Paragraph from "@Components/Elements/Paragraph/Paragraph";
+import { Paragraph as P } from "@Components/Elements/Paragraph/Paragraph";
 import HeadingTwo from "@Components/Elements/Headings/HeadingTwo";
 import { HighlightText as B } from "@Components/SyntaxHighlighter/HighlightText";
 import Sharing from "@Components/SocialShare/Sharing";
@@ -50,18 +50,18 @@ const ContactMePage: NextPageWithLayout = () => {
         sx={{ pl: { xs: 2, sm: 2, md: 0, lg: 0 }, pr: { xs: 2, sm: 2, md: 0, lg: 0 } }}
       >
         <Grid item md={8} lg={8}>
-          <Paragraph>
+          <P>
             We would love to hear from you! If you have any questions, feedback, or inquiries, please don’t hesitate to
             get in touch with us. Our team is here to assist you.
-          </Paragraph>
+          </P>
           <HeadingTwo id="support" title="Support" />
           <List sx={{ listStyle: "square", listStylePosition: "outside" }}>
             <ListItem sx={{ display: "list-item" }}>
               <ListItemText>
-                <Paragraph>
+                <P>
                   <B>Email</B>: Send us an email at <B>karunakarpatel.business@gmail.com</B>. We strive to respond to
                   all inquiries within 24 hours.
-                </Paragraph>
+                </P>
               </ListItemText>
             </ListItem>
           </List>
